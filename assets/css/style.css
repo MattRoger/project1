@@ -1,0 +1,72 @@
+.clearfix::after {
+    content: "";
+    display: block;
+    
+    clear: both;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    background-image: url("../back.jpg");
+}
+header {
+    padding: 30px 0;
+    clear: both;
+    position: fixed;
+    z-index: 99;
+    background: #617555;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    border-bottom: 8px solid #2b3624;
+    color: azure;
+    font-size: -webkit-xxx-large;
+    
+}
+footer {
+    padding: 30px 0;
+    clear: both;
+    position: fixed;
+    z-index: 1000;
+    background: #617555;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    /* margin: 402px 0 0;  */
+    height: 50px;
+    text-align: center;
+    border-top: 8px solid #2b3624;
+    color: azure;
+}
+.main-section {
+  float: left;
+  width: 100%;
+  height: 960px;
+  max-width: 960px;
+  padding: 30px;
+  margin: 150px;
+  position: absolute;
+  color: azure;
+}
+#name {
+    border: 1px solid #dddddd;
+    width: auto;
+    
+}
+.search {
+    position: relative;
+    float: right;
+    margin: 20px;
+    width: 250px;
+    
+}
+#country_list {
+    float: left;
+}
+button {
+    margin-top: 2%;
+    border: 1px solid #dddddd;
+    background-color: #617555;
+    color: azure;
+}

@@ -5,11 +5,29 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,800&display=swap" rel="stylesheet">
         <title>Project 1</title>
     </head>
 
     <body>
+        <header class="clearfix">The World Watcher</header>
+        <div class="main-section">
+            <div class="clearfix, search">
+                <label for="country">Enter a country you would like to search for: </label>
+                <input type="text" id="name" name="country_name" required="required">
+                <div class="button" id="search">
+                    <button type="submit">Search</button>
+                </div>
+            </div>
+            <div class="country_list, clearfix" id="country_list"></div>
+            <div class="news, clearfix" id="news"></div>
+        </div>
 
+        <footer id="foot">
+            <p class="down">Copyright</p>
+        </footer>
     </body>
 
 </html>
