@@ -41,7 +41,7 @@ footer {
     color: azure;
 }
 .main-section {
-  float: left;
+  /* float: left; */
   width: 100%;
   height: 960px;
   max-width: 960px;
@@ -68,9 +68,17 @@ footer {
     width: 250px;
     
 }
-#country_list {
-    float: left;
-}
+
+  .country-info{
+    padding:1.25em;
+    font-size: 1.25em;
+    line-height: 2.5em;
+    background:#F2F2F2;
+    border:4px solid #2b3624;
+    color:#424242;
+    width:16em;
+    display:none;
+  }
 button {
     display: inline-block;
     margin: 0 0.3em 0.3em 0;
