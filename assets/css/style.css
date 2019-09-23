@@ -150,3 +150,21 @@ button:hover {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+
+
+#enterCountry {
+z-index: 200;
+text-align: center;
+display: none;
+padding: 10px;
+background-color: rgba(128, 128, 128, 0.753);
+
+}
+
+#close {
+  display: block;
+  margin: auto;
+  margin-top: 10px;s
+  
+  
+}
