@@ -13,29 +13,29 @@
     </head>
 
     <body>
-        <header class="clearfix">The World Watcher</header>
-        <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#">Meet the team</a>
-            <a href="">Tetiana Cary</a>
-            <a href="#">Clients</a>
-            <a href="#">Contact</a>
-            <a href="#">Contact</a>
-        </div>
-
-        <!-- Use any element to open the sidenav -->
-        <span onclick="openNav()">open</span>
-
-        <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
         <div id="main">
-            ...
-        </div>
-        <div class="main-section">
-            <div class="clearfix, search">
-                <label for="country">Enter a country you would like to search for: </label>
-                <input type="text" id="cSearch" placeholder="Search" name="search" required="required">
-                <div class="button bouncy" id="search">
-                    <button type="submit">Search</button>
+            <header class="clearfix">The World Watcher</header>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="https://mattroger.github.io/responsive-portfolio/portfolio.html">Matt Roger</a>
+                <a href="https://wduesenberg.github.io/Responsive-Portfolio/">Wyatt Duesenberg</a>
+                <a href="https://sneezynam3.github.io/Bootstrap-Portfolio/">James Snell</a>
+                <a href="https://tcary.github.io/Responsive-Portfolio/">Tetiana Cary</a>
+            </div>
+
+            <!-- Use any element to open the sidenav -->
+            <span onclick="openNav()"><button class="meet">Meet the team</button></span>
+            <!-- <span onclick="openNav()">open</span> -->
+
+            <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+
+            <div class="main-section">
+                <div class="clearfix, search">
+                    <label for="country">Enter a country you would like to search for: </label>
+                    <input type="text" id="cSearch" placeholder="Search" name="search" required="required">
+                    <div class="button bouncy" id="search">
+                        <button type="submit">Search</button>
+                    </div>
                 </div>
             </div>
             <!-- Make some placeholder images at the page load and then replace it with user results -->
@@ -45,15 +45,24 @@
                 <div id="capital"></div>
                 <div id="population"></div>
                 <div id="region"></div>
-                <div id="currency"></div>
+                <div id="currency"></div></div>
+                <div class="news, clearfix" id="news"></div>
+               </div>
+
+
+           
             </div>
-            <div class="news, clearfix" id="news"></div>
+
+            <!-- Make some placeholder images at the page load and then replace it with user results -->
+           
+            
         </div>
 
         <footer id="foot">
             <p class="down">Copyright</p>
         </footer>
         <script src="assets/country.js"></script>
+
         <script src="assets/javascript/project.js"></script>
     </body>
 
