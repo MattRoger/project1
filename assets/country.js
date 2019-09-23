@@ -13,7 +13,9 @@ $("#search").on("click",function(event){
         url:countryURL,
         method: "GET"
     }).then (function(response){
-        $("#name").text("Country: " + response[0].nativeName)
+        $(".country-info").css({display:"block"})
+        $("#name").text("Country: " + response[0].name)
+        $("#native-name").text("Native Name: " + response[0].nativeName)
         $("#capital").text("Capital: " +response[0].capital)
         $("#population").text("Population: " +response[0].population)
         $("#region").text("Region: " +response[0].region)
