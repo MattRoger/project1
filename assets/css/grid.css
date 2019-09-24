@@ -2,12 +2,13 @@
     display:inline-grid;
     grid-template-columns: 1fr 2fr 1fr;
 }
-.news{
+.country-info{
     grid-column-start:1;
     grid-column-end: 2;
     grid-row-start: 1;
+    grid-row-end: 3;
 }
-.country-info{
+.news{
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
@@ -24,5 +25,5 @@
 .weather{
 grid-column-start: 3;
 grid-row-start:2;
-justify-self: stretch;
+/* justify-self: stretch; */
 }

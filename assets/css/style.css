@@ -48,20 +48,18 @@ footer {
     display: block;
     height:2.5em;
     margin-top:1.25em;
-    margin-bottom:1.25em;
-    
+    margin-bottom:1.25em;    
     box-shadow: 1px 1px 2px black, 0 0 1em rgb(103, 182, 103), 0 0 0.2em rgb(110, 221, 110);
-}
-#cSearch:focus {outline-color: #443006}
-
-#search {
+  }
+  #cSearch:focus {outline-color: #443006}
+  
+  #search {
     font-size: large;
-}
-
-.search {
-  display: block;
-  color:white;
-
+  }
+  
+  .search {
+    color:white;
+    
 }
 .outer-wrapper{
   z-index: 50;
@@ -78,26 +76,25 @@ footer {
 }
 .country-info{
   width:80%;
+  margin-left:1.25em;
 }
   .weather,
   .country-info{
     padding:.55em 1.15em;
     font-size: 1.25em;
     line-height: 2.5em;
-    background:rgba(242, 242, 242, 0.623);
-    border:4px solid #2b3624;
-    color:#424242;
-    width:16em;
-    display:none;
-    z-index:500;
     /* display:none; */
+    z-index:500;
+
   }
   .weather{
-    margin-top:1.25em;
+    /* margin-top:1.25em; */
+
   }
  
 .news{
-  margin-left:1.25em;
+
+  width:80%;
 }
 
 button {
@@ -108,8 +105,6 @@ button {
     padding: 0.7em 1.4em;
     border-radius: 0.15em;
     box-sizing: border-box;
-   
-   
     font-weight: 400;
     box-shadow: 1px 1px 2px black, 0 0 1em rgb(103, 182, 103), 0 0 0.2em rgb(110, 221, 110);
     text-align: center;
@@ -202,8 +197,11 @@ button:focus {outline-color: #443006}
 
 
 #enterCountry {
-z-index: 200;
+z-index: 10000;
 text-align: center;
+position: absolute;
+top:50%;
+left:50%;
 display: none;
 padding: 10px;
 background-color: rgba(128, 128, 128, 0.753);
