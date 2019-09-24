@@ -79,6 +79,7 @@ footer {
     color:#424242;
     width:16em;
     display:none;
+    z-index:500;
   }
 button {
     display: flex;
@@ -98,7 +99,7 @@ button {
     z-index: 100;
 }
 .meet {
-  position: fixed;
+  /* position: fixed; */
   top: 50px;
   left: 50px;
 }
@@ -172,4 +173,22 @@ button:focus {outline-color: #443006}
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+}
+
+
+#enterCountry {
+z-index: 200;
+text-align: center;
+display: none;
+padding: 10px;
+background-color: rgba(128, 128, 128, 0.753);
+
+}
+
+#close {
+  display: block;
+  margin: auto;
+  margin-top: 10px;s
+  
+  
 }
