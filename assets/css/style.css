@@ -41,7 +41,20 @@ footer {
   
   margin:100px auto;
 }
+<<<<<<< HEAD
 
+=======
+.main-section {
+  float: left;
+  width: 100%;
+  height: auto;
+  max-width: 960px;
+  padding: 30px;
+  margin: 150px;
+  position: absolute;
+  color: azure;
+}
+>>>>>>> fdee270653c4a6ee77ee8c4ef94985eec2155d41
 #cSearch {
     border: 1px solid #dddddd;
     width: auto;
@@ -119,19 +132,24 @@ button:hover {
     background-color: #2b3624;
 }
 button:focus {outline-color: #443006}
-/* .bouncy {
- animation: bouncy 5s infinite linear;
- position: relative;
+.bouncy {
+ -webkit-animation: bounce .5s infinite linear;
+-moz-animation: bounce .3s infinite alternate;
+  animation: bounce .3s infinite alternate;
+  -webkit-animation-iteration-count: 4;
+  -moz-animation-iteration-count: 4;
+  animation-iteration-count: 4;
 }
-@keyframes bouncy {
- 0%{top:0em}
- 40%{top:0em}
- 43%{top:-0.9em}
- 46%{top:0em}
- 48%{top:-0.4em}
- 50%{top:0em}
- 100%{top:0em;}
-} */
+@-webkit-keyframes bounce {
+  to { -webkit-transform: scale(1.2); }
+}
+@-moz-keyframes bounce {
+  to { -moz-transform: scale(1.2); }
+}
+@keyframes bounce {
+  to { transform: scale(1.2); }
+}
+/*  position: relative; */
 
 /* The side navigation menu */
 .sidenav {
@@ -149,6 +167,7 @@ button:focus {outline-color: #443006}
 
 /* The navigation menu links */
 .sidenav a {
+  text-shadow: none;
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
