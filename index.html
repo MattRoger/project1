@@ -13,21 +13,21 @@
     </head>
 
     <body>
+        <header>The World Watcher</header>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="https://mattroger.github.io/responsive-portfolio/portfolio.html">Matt Roger</a>
+            <a href="https://wduesenberg.github.io/Responsive-Portfolio/">Wyatt Duesenberg</a>
+            <a href="https://sneezynam3.github.io/Bootstrap-Portfolio/">James Snell</a>
+            <a href="https://tcary.github.io/Responsive-Portfolio/">Tetiana Cary</a>
+        </div>
         <div id="main">
-            <header class="clearfix">The World Watcher</header>
-            <div id="mySidenav" class="sidenav">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a href="https://mattroger.github.io/responsive-portfolio/portfolio.html">Matt Roger</a>
-                <a href="https://wduesenberg.github.io/Responsive-Portfolio/">Wyatt Duesenberg</a>
-                <a href="https://sneezynam3.github.io/Bootstrap-Portfolio/">James Snell</a>
-                <a href="https://tcary.github.io/Responsive-Portfolio/">Tetiana Cary</a>
-            </div>
 
 
             <span onclick="openNav()"><button class="meet">Meet the team</button></span>
 
             <div class="main-section">
-                <div class="clearfix search">
+                <div class="search">
                     <label for="country">Enter a country you would like to search for: </label>
                     <input type="text" id="cSearch" placeholder="Search" name="search" required="required">
                     <div class="button bouncy" id="search">
@@ -36,7 +36,7 @@
                 </div>
             </div>
             <!-- Make some placeholder images at the page load and then replace it with user results -->
-            <div class="country_list clearfix country-info">
+            <div class="country_list country-info">
                 <div id="name"></div>
                 <div id="native-name"></div>
                 <div id="capital"></div>
@@ -44,7 +44,15 @@
                 <div id="region"></div>
                 <div id="currency"></div>
             </div>
-            <div class="news clearfix" id="news"></div>
+
+            <div class="news" id="news"></div>
+
+            <div class="weather">
+                <div class="city"></div>
+                <div class="wind"></div>
+                <div class="humidity"></div>
+                <div class="temp"></div>
+            </div>
         </div>
 
         <footer id="foot">

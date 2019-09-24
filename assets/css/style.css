@@ -1,8 +1,5 @@
-.clearfix::after {
-    content: "";
-    display: block;
-    
-    clear: both;
+body {
+display: flex;
 }
 * {
     box-sizing: border-box;
@@ -63,11 +60,14 @@ footer {
     font-size: large;
 }
 .search {
-    position: relative;
+    /* position: relative;
     float: right;
     margin: 20px;
-    width: 250px;
-    
+    width: 250px; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    /* justify-content: space-between; */
 }
 
   .country-info{
@@ -81,7 +81,7 @@ footer {
     display:none;
   }
 button {
-    display: inline-block;
+    display: flex;
     margin: 0 0.3em 0.3em 0;
     background-color: #617555;
     color: azure;
@@ -98,6 +98,7 @@ button {
     z-index: 100;
 }
 .meet {
+  position: fixed;
   top: 50px;
   left: 50px;
 }
@@ -139,7 +140,7 @@ button:focus {outline-color: #443006}
   text-decoration: none;
   font-size: 25px;
   color: #818181;
-  display: block;
+  display: flex;
   transition: 0.3s;
 }
 
@@ -161,6 +162,10 @@ button:focus {outline-color: #443006}
 #main {
   transition: margin-left .5s;
   /* padding: 20px; */
+}
+.weather {
+  
+  flex-direction: column;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
