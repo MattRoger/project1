@@ -25,5 +25,5 @@
 .weather{
 grid-column-start: 3;
 grid-row-start:2;
-justify-self: stretch;
+/* justify-self: stretch; */
 }
