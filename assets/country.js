@@ -51,6 +51,7 @@ $("#search").on("click", function (event) {
         $("#population").text("Population: " + response[0].population)
         $("#region").text("Region: " + response[0].region)
         $("#currency").text("Currency: " + response[0].currencies[0].name)
+        $("#cSearch").val("")
         console.log(response)
         console.log(response[0].nativeName)
         console.log(response[0].capital)
@@ -74,10 +75,8 @@ $("#search").on("click", function (event) {
             $(".temp").text("Temperature: " + response.main.temp);
 
         });
+
     })
-
-
-
 
     var countryURL = "https://restcountries.eu/rest/v2/name/" + countrySearch;
 
