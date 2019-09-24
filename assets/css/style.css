@@ -49,13 +49,15 @@ footer {
   color: azure;
 }
 #cSearch {
+  background:rgba(242, 242, 242, 0.623);
     border: 1px solid #dddddd;
     width: auto;
     padding: 4%;
     margin: 5%;
     box-shadow: 1px 1px 2px black, 0 0 1em rgb(103, 182, 103), 0 0 0.2em rgb(110, 221, 110);
-    
 }
+#cSearch:focus {outline-color: #443006}
+
 #search {
     font-size: large;
 }
@@ -68,13 +70,14 @@ footer {
     flex-direction: column;
     align-items: flex-end;
     /* justify-content: space-between; */
+    
 }
 
   .country-info{
     padding:1.25em;
     font-size: 1.25em;
     line-height: 2.5em;
-    background:#F2F2F2;
+    background:rgba(242, 242, 242, 0.623);
     border:4px solid #2b3624;
     color:#424242;
     width:16em;
@@ -107,6 +110,7 @@ button:hover {
     background-color: #2b3624;
 }
 button:focus {outline-color: #443006}
+
 .bouncy {
  -webkit-animation: bounce .5s infinite linear;
 -moz-animation: bounce .3s infinite alternate;

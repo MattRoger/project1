@@ -1,14 +1,14 @@
 var countrySearch;
 console.log("start");
-$("#search").on("click", function (event) {
+$(".search").submit(function (event) {
+
     event.preventDefault();
-    console.log("clicked")
 
     var countrySearch = $("#cSearch").val().trim()
 
-
     var countryURL = "https://restcountries.eu/rest/v2/name/" + countrySearch;
 
+    console.log(countryURL)
     $.ajax({
         url: countryURL,
         method: "GET"
@@ -73,8 +73,9 @@ $("#search").on("click", function (event) {
 
         $("#enterCountry").css({ display: "block" })
     }
-})
 
-$("#close").on("click", function () {
-    $("#enterCountry").css({ display: "none" })
+
+    $("#close").on("click", function () {
+        $("#enterCountry").css({ display: "none" })
+    })
 })
