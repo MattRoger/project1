@@ -79,6 +79,7 @@ footer {
     color:#424242;
     width:16em;
     display:none;
+    z-index:500;
   }
 button {
     display: inline-block;
