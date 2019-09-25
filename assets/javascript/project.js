@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 $("#select-country").on("click", function(event) {
     event.preventDefault();
     console.log("hello");
@@ -41,7 +40,6 @@ $("#select-country").on("click", function(event) {
 
 
 });
-=======
 console.log('javascript loaded');
 
 /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
@@ -73,4 +71,3 @@ function closeNav() {
 //     $(".temp").text("Temperature: " + response.main.temp);
 
 // });
->>>>>>> 1faf7814cdeda6c72b4a3b6055c373098cf991e7
