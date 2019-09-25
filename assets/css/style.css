@@ -137,9 +137,8 @@ button {
 }
 
 .meet {
-    /* position: fixed; */
-    top: 50px;
-    left: 50px;
+  top: 50px;
+  left: 50px;
 }
 
 button:hover {
@@ -273,5 +272,5 @@ button:focus {
     display: block;
     margin: auto;
     margin-top: 10px;
-    s
+    
 }

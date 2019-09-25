@@ -1,5 +1,5 @@
 $(document).ready(function start() {
-    
+
     $.ajax({
         url: "https://restcountries.eu/rest/v2/name/USA",
         method: "GET"
@@ -34,12 +34,9 @@ $(".search").submit(function (event) {
 
     var countryURL = "https://restcountries.eu/rest/v2/name/" + countrySearch;
 
-
     $.ajax({
         url: countryURL,
         method: "GET"
-
-
     }).then(function (response) {
         $(".country-info").css({ display: "block" })
         $("#name").text("Country: " + response[0].name)
@@ -66,10 +63,10 @@ $(".search").submit(function (event) {
         }).then(function (response) {
             console.log(response);
 
-            $(".city").html("<h1>"+"City " + response.name + "</h1>");
+            $(".city").html("<h1>" + "City " + response.name + "</h1>");
             $(".wind").text("Wind speed: " + response.wind.speed + "MPH");
-            $(".humidity").text("Humidity: " + response.main.humidity+"%");
-            $(".temp").text("Temperature: " + response.main.temp+"F");
+            $(".humidity").text("Humidity: " + response.main.humidity + "%");
+            $(".temp").text("Temperature: " + response.main.temp + "F");
 
         });
 
