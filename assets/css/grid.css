@@ -1,29 +1,32 @@
-.main-section{
-    display:inline-grid;
+.main-section {
+    display: inline-grid;
     grid-template-columns: 1fr 2fr 1fr;
 }
-.country-info{
-    grid-column-start:1;
+
+.country-info {
+    grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 3;
 }
-.news{
+
+.news {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 3;
     justify-self: center;
-    
 }
-.search{
+
+.search {
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 1;
     justify-self: end;
 }
-.weather{
-grid-column-start: 3;
-grid-row-start:2;
-/* justify-self: stretch; */
+
+.weather {
+    grid-column-start: 3;
+    grid-row-start: 2;
+    /* justify-self: stretch; */
 }
