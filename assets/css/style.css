@@ -58,6 +58,7 @@ footer {
   }
   
   .search {
+    z-index: 10;
     color:white;
     
 }
@@ -84,7 +85,7 @@ footer {
     font-size: 1.25em;
     line-height: 2.5em;
     /* display:none; */
-    z-index:500;
+   
 
   }
   .weather{
@@ -113,7 +114,7 @@ button {
     z-index: 1000;
 }
 .meet {
-  /* position: fixed; */
+  position: sticky;
   top: 50px;
   left: 50px;
 }
