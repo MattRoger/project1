@@ -137,7 +137,7 @@ img{
  margin: 1em auto;
 }
 button {
-    display: flex;
+    /* display: flex;
     margin: 0 0.3em 0.3em 0;
     background-color: #617555;
     color: azure;
@@ -149,7 +149,7 @@ button {
     text-align: center;
     position: relative;
     font-family: 'Fira Sans', sans-serif;
-    z-index: 1000;
+    z-index: 1000; */
 }
 
 .meet {
@@ -165,8 +165,29 @@ button:hover {
 button:focus {
     outline-color: #443006
 }
+  /* turn it off completely */
+/* select:active, select:hover {
+  outline: none
+} */
+/* make it red instead (with with same width and style) */
+select:active, select:hover {
+  outline-color: red
+}
 
 .bouncy {
+  display: flex;
+    margin: 0 0.3em 0.3em 0;
+    background-color: #617555;
+    color: azure;
+    padding: 0.7em 1.4em;
+    border-radius: 0.15em;
+    box-sizing: border-box;
+    font-weight: 400;
+    box-shadow: 1px 1px 2px black, 0 0 1em rgb(103, 182, 103), 0 0 0.2em rgb(110, 221, 110);
+    text-align: center;
+    position: relative;
+    font-family: 'Fira Sans', sans-serif;
+    z-index: 1000;
     -webkit-animation: bounce .5s infinite linear;
     -moz-animation: bounce .3s infinite alternate;
     animation: bounce .3s infinite alternate;
@@ -255,12 +276,6 @@ button:focus {
     transition: margin-left .5s;
     /* padding: 20px; */
 }
-
-
-/* .weather {
-  
-  flex-direction: column;
-} */
 
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
