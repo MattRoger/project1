@@ -23,17 +23,19 @@ $("#select-country").on("click", function(event) {
             var imageURL = results[i].urlToImage;
             var title = results[i].title;
             var description = results[i].description;
+            var url = $("<button>").addClass("seeArticle").attr("data-href", results[i].url).text("See Article");
 
+            // var url = results[i].url;
             var h1 = $("<h1>").text(title);
             var p = $("<p>").text(description);
 
             var newsImage = $("<img>");
             newsImage.attr("src", imageURL);
 
-
             newsDiv.prepend(h1);
             newsDiv.prepend(p);
             newsDiv.prepend(newsImage);
+            newsDiv.prepend(url);
             $("#news-view").prepend(newsDiv);
             // $("#news-view").text("hello")
         }
@@ -42,6 +44,11 @@ $("#select-country").on("click", function(event) {
 
 
 });
+$("#news-view").on("click", ".seeArticle", function(event) {
+    event.preventDefault();
+    window.open($(this).attr("data-href"), "_blank");
+
+})
 console.log('javascript loaded');
 
 /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
