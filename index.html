@@ -5,36 +5,33 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-        <link rel="stylesheet" type="text/css" href="assets/css/grid.css">
-        <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" text="text/css" href="assets/css/reset.css">
+        <link rel="stylesheet" text="text/css" href="assets/css/grid.css">
+        <link rel="stylesheet" text="text/css" href="assets/css/style.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <title>Project 1</title>
+        <title>Document</title>
     </head>
 
     <body>
-        <div id="main">
-            <header>The World Watcher</header>
 
-            <div id="mySidenav" class="sidenav">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a href="https://mattroger.github.io/responsive-portfolio/portfolio.html">Matt Roger</a>
-                <a href="https://wduesenberg.github.io/Responsive-Portfolio/">Wyatt Duesenberg</a>
-                <a href="https://sneezynam3.github.io/Bootstrap-Portfolio/">James Snell</a>
-                <a href="https://tcary.github.io/Responsive-Portfolio/">Tetiana Cary</a>
-            </div>
+        <header>The World Watcher</header>
 
-            <span onclick="openNav()"><button class="meet bouncy">Meet the team</button></span>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="https://mattroger.github.io/responsive-portfolio/portfolio.html">Matt Roger</a>
+            <a href="https://wduesenberg.github.io/Responsive-Portfolio/">Wyatt Duesenberg</a>
+            <a href="https://sneezynam3.github.io/Bootstrap-Portfolio/">James Snell</a>
+            <a href="https://tcary.github.io/Responsive-Portfolio/">Tetiana Cary</a>
+        </div>
 
-
+        <span onclick="openNav()"><button class="meet bouncy">Meet the team</button></span>
 
         <div class="main-section">
             <form class="search">
                 <label for="cSearch">Enter a country you would like to search for: </label>
                 <input type="text" id="cSearch" placeholder="Search" name="search" required="required">
-                <div class="button bouncy" id="search">
-                    <button type="submit">Search</button>
+                <div id="search">
+                    <button class="bouncy" type="submit">Search</button>
                 </div>
 
             </form>
@@ -51,7 +48,7 @@
                 <div id="currency"></div>
             </div>
             <div class="weather">
-                    <p class="section-head">WEATHER</p>
+                <p class="section-head">WEATHER</p>
                 <div class="city"></div>
                 <div class="wind"></div>
                 <div class="humidity"></div>
@@ -61,11 +58,14 @@
 
 
             <div class="news scroll-box" id="news">
-                    <p class="section-head">NEWS</p>
-                <p>country select</p>
+                <p class="section-head">NEWS</p>
+
                 <div class="dropdown">
 
                     <form>
+                        <label for="country">
+                            <p>country select</p>
+                        </label>
                         <select id="country" name="country">
                             <option value="AF">Afghanistan</option>
                             <option value="AX">Åland Islands</option>
@@ -318,7 +318,7 @@
                             <option value="ZW">Zimbabwe</option>
                         </select>
                         <br><br>
-                        <input id="select-country" type="submit">
+                        <button id="select-country" class="bouncy" type="submit">Submit</button>
                     </form>
                 </div>
 
@@ -338,17 +338,17 @@
                 <button id="close">Okay</button>
             </p>
         </div>
-    </div>
+        </div>
 
 
 
-    <footer id="foot">
-        <p class="down">&copy 2019 DU BOOTCAMP TEAM</p>
-    </footer>
-    <script src="assets/country.js"></script>
-    <script src="assets/javascript/project.js"></script>
-    <script type="text/javascript" src="assets/javascript/project.js"></script>
-</body>
+        <footer id="foot">
+            <p class="down">&copy 2019 DU BOOTCAMP TEAM</p>
+        </footer>
+        <script src="assets/country.js"></script>
+        <script src="assets/javascript/project.js"></script>
+        <script type="text/javascript" src="assets/javascript/project.js"></script>
+    </body>
 
 
 </html>
