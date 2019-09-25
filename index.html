@@ -1,33 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<<<<<<< HEAD
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-        <link rel="stylesheet" type="text/css" href="assets/css/grid.css">
-        <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,800&display=swap" rel="stylesheet">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <title>Project 1</title>
+        <link rel="stylesheet" text="text/css" href="assets/css/style.css">
+        <title>Document</title>
     </head>
-=======
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" text="text/css" href="assets/css/style.css">
-    <title>Document</title>
-</head>
 
-<body>
-    <p>country select</p>
-    <div class="dropdown">
+    <body>
+        <p>country select</p>
+        <div class="dropdown">
 
-        <form>
-            <select id="country" name="country">
+            <form>
+                <select id="country" name="country">
                     <option value="AF">Afghanistan</option>
                     <option value="AX">Åland Islands</option>
                     <option value="AL">Albania</option>
@@ -278,27 +265,26 @@
                     <option value="ZM">Zambia</option>
                     <option value="ZW">Zimbabwe</option>
                 </select>
-            <br><br>
-            <input id="select-country" type="submit">
-        </form>
-    </div>
-    </div>
-    <div class="container">
+                <br><br>
+                <input id="select-country" type="submit">
+            </form>
+        </div>
+        </div>
+        <div class="container">
 
-        <div id="news-view"></div>
-    </div>
+            <div id="news-view"></div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="assets/javascript/project.js"></script>
+    </body>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/grid.css">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,800&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="assets/javascript/project.js"></script>
-</body>
-
-<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-<link rel="stylesheet" type="text/css" href="assets/css/grid.css">
-<link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,800&display=swap" rel="stylesheet">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<title>Project 1</title>
-</head>
->>>>>>> 09113e781c74d421971be7498610b2264c7e8801
+    <title>Project 1</title>
+    </head>
 
     <body>
         <div id="main">
@@ -314,7 +300,8 @@
 
             <span onclick="openNav()"><button class="meet bouncy">Meet the team</button></span>
 
-<<<<<<< HEAD
+            <span onclick="openNav()"><button class="meet">Meet the team</button></span>
+
 
             <div class="main-section">
                 <form class="search">
@@ -323,10 +310,12 @@
                     <div class="button bouncy" id="search">
                         <button type="submit">Search</button>
                     </div>
-                </form>
-            </div>
 
-            <div class="country_list country-info">
+                </form>
+
+            </div>
+            <!-- Make some placeholder images at the page load and then replace it with user results -->
+            <div class="country-info">
                 <div id="name"></div>
                 <div id="native-name"></div>
                 <div id="capital"></div>
@@ -334,16 +323,24 @@
                 <div id="region"></div>
                 <div id="currency"></div>
             </div>
-
-            <div class="news" id="news"></div>
-
             <div class="weather">
                 <div class="city"></div>
                 <div class="wind"></div>
                 <div class="humidity"></div>
                 <div class="temp"></div>
             </div>
+
+
+
+            <div class="news" id="news">
+                NEWS
+            </div>
         </div>
+        <!-- Make some placeholder images at the page load and then replace it with user results -->
+
+        </div>
+        </div>
+
 
         <div id="enterCountry">
             <p>
@@ -354,72 +351,13 @@
         </div>
 
 
+
         <footer id="foot">
             <p class="down">&copy 2019 DU BOOTCAMP TEAM</p>
         </footer>
         <script src="assets/country.js"></script>
         <script src="assets/javascript/project.js"></script>
     </body>
-=======
-        <span onclick="openNav()"><button class="meet">Meet the team</button></span>
-
-
-        <div class="main-section">
-            <form class="search">
-                <label for="cSearch">Enter a country you would like to search for: </label>
-                <input type="text" id="cSearch" placeholder="Search" name="search" required="required">
-                <div class="button bouncy" id="search">
-                    <button type="submit">Search</button>
-                </div>
-
-            </form>
-
-        </div>
-        <!-- Make some placeholder images at the page load and then replace it with user results -->
-        <div class="country-info">
-            <div id="name"></div>
-            <div id="native-name"></div>
-            <div id="capital"></div>
-            <div id="population"></div>
-            <div id="region"></div>
-            <div id="currency"></div>
-        </div>
-        <div class="weather">
-            <div class="city"></div>
-            <div class="wind"></div>
-            <div class="humidity"></div>
-            <div class="temp"></div>
-        </div>
-
-
-
-        <div class="news" id="news">
-            NEWS
-        </div>
-    </div>
-    <!-- Make some placeholder images at the page load and then replace it with user results -->
-
-    </div>
-    </div>
-
-
-    <div id="enterCountry">
-        <p>
-            Please enter a Country
-            <button id="close">Okay</button>
-        </p>
-    </div>
-    </div>
-
-
-
-    <footer id="foot">
-        <p class="down">&copy 2019 DU BOOTCAMP TEAM</p>
-    </footer>
-    <script src="assets/country.js"></script>
-    <script src="assets/javascript/project.js"></script>
-</body>
->>>>>>> 09113e781c74d421971be7498610b2264c7e8801
 
 
 </html>
