@@ -14,11 +14,12 @@ $("#select-country").on("click", function(event) {
         method: "GET"
     }).then(function(response) {
         var results = response.articles;
-        var newsDiv = $("<div>");
-        console.log(results)
-            //
+        console.log(response)
+        //
         for (var i = 0; i < results.length; i++) {
             //
+            var newsDiv = $("<div>");
+            console.log("hit for loop")
             var imageURL = results[i].urlToImage;
             var title = results[i].title;
             var description = results[i].description;
@@ -34,6 +35,7 @@ $("#select-country").on("click", function(event) {
             newsDiv.prepend(p);
             newsDiv.prepend(newsImage);
             $("#news-view").prepend(newsDiv);
+            // $("#news-view").text("hello")
         }
 
     });

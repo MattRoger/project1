@@ -10,7 +10,7 @@ header {
     padding: 30px 0;
     clear: both;
     position: fixed;
-    z-index: 99;
+    z-index: 1000;
     background: #617555;
     width: 100%;
     height: 100px;
@@ -44,7 +44,11 @@ footer {
     margin: 100px auto;
 }
 
-#cSearch {
+
+#select-country {
+  margin-left:.25em;
+}
+  #cSearch{
     background: rgba(242, 242, 242, 0.623);
     border: 1px solid #dddddd;
     width: auto;
@@ -61,12 +65,21 @@ footer {
 
 #search {
     font-size: large;
+  }
+  
+  .search {
+    z-index: 10;
+    color:white;
+    
 }
 
-.search {}
+.scroll-box {
+   height:430px; /* maximum height of the box, feel free to change this! */
+   overflow-y: scroll;
+}
 
 .outer-wrapper {
-    z-index: 50;
+    /* z-index: 50; */
     margin-top: 100px;
     height: 2.5em;
     margin-top: 1.25em;
@@ -89,14 +102,15 @@ footer {
 .country-info,
 .news,
 .weather {
-    background: #F2F2F2;
-    border: 4px solid #2b3624;
-    color: #424242;
+  background: rgba(242, 242, 242, 0.623);
+  border: 4px solid #2b3624;
+  color: #424242;
 }
 
 .country-info {
     width: 80%;
     margin-left: 1.25em;
+    z-index: 10;
 }
 
 .weather,
@@ -104,9 +118,7 @@ footer {
     padding: .55em 1.15em;
     font-size: 1.25em;
     line-height: 2.5em;
-    background: rgba(242, 242, 242, 0.623);
-    border: 4px solid #2b3624;
-    color: #424242;
+
     width: 16em;
     /* display: none; */
     z-index: 500;
@@ -119,7 +131,11 @@ footer {
 .news {
     width: 80%;
 }
-
+#news-view
+img{
+ width:90%;
+ margin: 1em auto;
+}
 button {
     display: flex;
     margin: 0 0.3em 0.3em 0;
@@ -137,6 +153,7 @@ button {
 }
 
 .meet {
+  position: sticky;
   top: 50px;
   left: 50px;
 }
@@ -272,5 +289,11 @@ button:focus {
     display: block;
     margin: auto;
     margin-top: 10px;
-    
+}
+.section-head{
+  color: azure; 
+  font-size: xx-large; 
+  text-shadow: 1px 1px 2px black, 0 0 1em rgb(103, 182, 103), 0 0 0.2em rgb(110, 221, 110); 
+  font-family: 'Fira Sans', sans-serif; 
+  text-align: center;
 }
