@@ -1,9 +1,9 @@
 $(document).ready(function start() {
+    
 
     $.ajax({
         url: "https://restcountries.eu/rest/v2/name/USA",
         method: "GET"
-
 
     }).then(function (response) {
         $(".country-info").css({ display: "block" })
@@ -20,10 +20,28 @@ $(document).ready(function start() {
         console.log(response[0].region)
         console.log(response[0].currencies[0].name)
         //   
-
     })
-}
-)
+
+    var APIKey = "08201fdb1a365def49e6181967f0815d";
+    var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=Washington&appid=" + APIKey + "&units=imperial";
+
+    $.ajax({
+        url: queryURL,
+        method: "GET"
+    }).then(function (response) {
+        console.log(response);
+
+        $(".city").html("<h1>" + "City: " + response.name + "</h1>");
+        $(".wind").text("Wind speed: " + response.wind.speed + "MPH");
+        $(".humidity").text("Humidity: " + response.main.humidity + "%");
+        $(".temp").text("Temperature: " + response.main.temp + "F");
+
+    });
+})
+
+
+
+
 var countrySearch;
 console.log("start");
 $(".search").submit(function (event) {
