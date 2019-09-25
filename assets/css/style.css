@@ -78,6 +78,7 @@ footer {
    overflow-y: scroll;
 }
 
+
 .outer-wrapper {
     /* z-index: 50; */
     margin-top: 100px;
@@ -123,7 +124,15 @@ footer {
     /* display: none; */
     z-index: 500;
 }
+.news p
+{
+  margin-left:1.25em;
+  padding-bottom:.5em;
+}
+.dropdown{
+  margin-left:1.25em;
 
+}
 .weather {
     margin-top: 1.25em;
 }
@@ -133,8 +142,13 @@ footer {
 }
 #news-view
 img{
+ display: block;
  width:90%;
  margin: 1em auto;
+}
+#news-view
+h1{
+  margin-left:.25em;
 }
 button {
     display: flex;
