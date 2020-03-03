@@ -13,13 +13,14 @@ Working
 ## Tech/framework used
 * JavaScript
 * jQuert
-* Weather API
-* News API
+* [Open Weather API](https://openweathermap.org/)
+* [News API](newsapi.org)
+* [RESTCountries](http://restcountries.eu/)
 * CSS
 * HTML
 
 ## Features
-* Two different APIs
+* Three different APIs
 
 ## A Quick Peak
 ![worldwatcher](https://github.com/MattRoger/screenshots/blob/master/example.png?raw=true)
@@ -31,6 +32,9 @@ Working
 ## How to use?
 Input a country into the search bar. to see stats on the country.
 ## API Reference
+* [News API](newsapi.org)
+* [Open Weather API](https://openweathermap.org/)
+* [RESTCountries](http://restcountries.eu/)
 
 ## Tests
 
