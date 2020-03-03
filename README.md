@@ -1,4 +1,4 @@
-# World Watcher
+# World Watcher :us: :ukraine: :earth_americas: :mexico: :canada:
 Search for a country to find out about the country's statistics, weather, and news.
 
 ## Motivation
@@ -13,7 +13,7 @@ Working
 ## Tech/framework used
 * JavaScript
 * jQuert
-* [Open Weather API](https://openweathermap.org/)
+* [Open Weather API](https://openweathermap.org/) 
 * [News API](newsapi.org)
 * [RESTCountries](http://restcountries.eu/)
 * CSS
@@ -32,22 +32,12 @@ Working
 ## How to use?
 Input a country into the search bar. to see stats on the country.
 ## API Reference
-* [News API](newsapi.org)
-* [Open Weather API](https://openweathermap.org/)
-* [RESTCountries](http://restcountries.eu/)
-
-## Tests
-
-
-
+* [News API](newsapi.org) :globe_with_meridians:
+* [Open Weather API](https://openweathermap.org/) :sun_behind_rain_cloud:
+* [RESTCountries](http://restcountries.eu/) 	:world_map:
 
 ## Credits / Contact information
 * @MattRoger 
   * :man_office_worker: https://mattroger.github.io/
   * :e-mail: mattroger.webdev@gmail.com
   * :man_office_worker: www.linkedin.com/in/matt-roger/
-
-
-## License
-
-
