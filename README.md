@@ -1,4 +1,4 @@
-# World Watcher :us: :ukraine: :earth_americas: :mexico: :canada:
+# World Watcher :earth_americas: :eye:
 Search for a country to find out about the country's statistics, weather, and news.
 
 ## Motivation
